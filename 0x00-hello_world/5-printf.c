@@ -2,7 +2,7 @@
 
 /**
  *
- * main - Prints a text
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  *
