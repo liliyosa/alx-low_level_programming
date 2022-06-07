@@ -1,22 +1,23 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * main - Prints "Holberton" followed by a new line.
+ * main - print _putchar
  *
- * Return: Always 0.
+ * Description: use the putchar function in main.h
+ *
+ * Return: 0 on success
  */
+
 int main(void)
 {
-	_putchar('H');
-	_putchar('o');
-	_putchar('l');
-	_putchar('b');
-	_putchar('e');
-	_putchar('r');
-	_putchar('t');
-	_putchar('o');
-	_putchar('n');
-	_putchar('\n');
+	char str[8] = "_putchar";
+	int i = 0;
 
+	while (i < 8)
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	putchar('\n');
 	return (0);
 }
