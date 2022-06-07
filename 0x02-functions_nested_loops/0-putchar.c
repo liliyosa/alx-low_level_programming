@@ -1,23 +1,21 @@
-#include "main.h"
+#include 'main.h'
 
 /**
- * main - print _putchar
+ * main - prints putchar
  *
- * Description: use the putchar function in main.h
- *
- * Return: 0 on success
+ * Return: Always 0.
  */
-
 int main(void)
 {
-	char str[8] = "_putchar";
-	int i = 0;
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
-	while (i < 8)
-	{
-		_putchar(str[i]);
-		i++;
-	}
-	putchar('\n');
 	return (0);
 }
