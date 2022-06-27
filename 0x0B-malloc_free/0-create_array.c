@@ -7,27 +7,24 @@
  * @size: size of array.
  * @c: char to initialize array with.
  *
- * Return: Pointer to array or
- * NULL if it fails.
+ * Return: If size == 0 or the function fails - NULL.
+ * Otherwise - a pointer to the array.
  */
 char *create_array(unsigned int size, char c)
 {
-	char *arr;
-	unsigned int i;
+	char *array;
+	unsigned int index;
 
-	{
-		return (NULL);
-	}
-
-	arr = malloc(sizeof(char) * size);
-
-	if (arr == NULL)
+	if (size == 0)
 		return (NULL);
 
-	for (i = 0; i < size; i++)
-	{
-		arr[i] = c;
-	}
+	array = malloc(sizeof(char) * size);
 
-	return (arr);
+	if (array == NULL)
+		return (NULL);
+
+	for (index = 0; index < size; index++)
+		array[index] = c;
+
+	return (array);
 }
